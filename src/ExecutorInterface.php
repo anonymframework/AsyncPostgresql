@@ -1,9 +1,8 @@
 <?php
 namespace Cable\Postgresql;
 
-class Async implements ExecutorInterface
+interface ExecutorInterface
 {
-
 
     /**
      * @param ConnectionInterface postgresql connection
@@ -11,8 +10,6 @@ class Async implements ExecutorInterface
      * @param array $parameters
      * @return mixed
      */
-    public function query(ConnectionInterface $connection, $query, array $parameters = array())
-    {
+    public function query(ConnectionInterface $connection, $query, array $parameters = array());
 
-    }
 }

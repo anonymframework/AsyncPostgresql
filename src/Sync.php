@@ -1,7 +1,8 @@
 <?php
 namespace Cable\Postgresql;
 
-class Async implements ExecutorInterface
+
+class Sync implements ExecutorInterface
 {
 
 
@@ -13,6 +14,7 @@ class Async implements ExecutorInterface
      */
     public function query(ConnectionInterface $connection, $query, array $parameters = array())
     {
-
+        // TODO: Implement query() method.
     }
 }
+
